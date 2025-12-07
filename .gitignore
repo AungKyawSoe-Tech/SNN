@@ -1,0 +1,46 @@
+# Build artifacts
+build/
+*.vvp
+*.vcd
+*.log
+*.rpt
+*.dcp
+*.ltx
+*.jou
+*.str
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Vivado
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+vivado*.jou
+vivado*.log
+webtalk*.jou
+webtalk*.log
+usage_statistics_webtalk.*
+
+# Simulation
+obj_dir/
+sim/results/
+
+# Temporary files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Keep important build outputs
+!build/digilent_arty/gateware/*.bit
+!build/digilent_arty/gateware/*.bin
+!build/digilent_arty/csr.csv
+!build/digilent_arty/csr.json

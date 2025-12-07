@@ -1,0 +1,17 @@
+Opcode,Usage,Notes
+0x00,Load,
+0x01,Load-FP,
+0x02,Custom-0 (Available for SNN),Reserve for neuron configure/spike instructions
+0x03,Load-Reserved,
+0x04,Load-Reserved,
+0x05,AMO,
+0x06,OP-IMM,
+0x07,AUIPC,
+0x08,Store,
+0x09,Store-FP,
+0x0A,Custom-2 (Available),
+0x0B,OP,
+0x0C,LUI,
+0x0D,OP-32,
+0x0E,MISC-MEM,
+0x0F,System,

@@ -1,0 +1,18 @@
+Feature,Status,Notes
+RV32I Base,Confirmed,Included in default build per doc/NEORV32.pdf
+RV32M Multiply/Divide,Confirmed,`NEORV32_USE_MULDIV = true` by default
+RV32A Atomics,Missing,Core does not implement A-extension (per feature matrix)
+RV32C Compressed,Confirmed,Enable via `NEORV32_USE_Zicsr` and `NEORV32_USE_FLOAT=0`
+Privilege Mode M,Confirmed,Machine mode only
+Privilege Mode S,Missing,No supervisor mode support
+Privilege Mode U,Missing,User mode not implemented
+MMU (satp),Missing,No page-table hardware; requires alternate host core
+CSR Support (mstatus, medeleg, mideleg),Partial,Machine CSRs present; no medeleg/mideleg
+Interrupt Controller,Confirmed,Machine interrupt controller with up to 31 sources
+Timers (mtime/mtimecmp),Confirmed,`MTIME` implemented in `neorv32_mtime`
+Debug Module,Missing,On-chip debugger optional but not RISC-V Debug spec compliant
+Custom Extension Hooks,Available,Custom instruction and coprocessor interface exposed
+Pipeline Stages,Documented,Two-stage pipeline (fetch/execute)
+Branch Prediction,Missing,Static branch prediction only (not dynamic)
+Exception Handling,Partial,Machine-level traps only
+Performance Counters,Confirmed,`mcycle`, `minstret`, `mhpmcounter` subset
